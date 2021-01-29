@@ -1,0 +1,121 @@
+%! suppress = Makeatletter
+%! suppress = Makeatletter
+\documentclass[11pt]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{polski}
+\usepackage[raggedright]{titlesec}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage[backend=biber, bibencoding=utf8, style=ieee, dashed=false, isbn=false, doi=false, sorting=anyvt]{biblatex}
+\usepackage{caption}
+\captionsetup{%
+justification=raggedright,
+labelfont=bf,
+singlelinecheck=off
+}
+
+%\addbibresource{library.bib}
+%\addbibresource{NEW.bib}
+
+\pagestyle{headings}
+
+\renewcommand{\chaptername}{Rozdział}
+\renewcommand{\contentsname}{Spis treści}
+\renewcommand{\figurename}{Rys.}
+\renewcommand{\tablename}{Tab.}
+\renewcommand{\listfigurename}{Spis rysunków}
+\renewcommand{\listtablename}{Spis tabel}
+\renewcommand{\bibname}{Bibliografia}
+
+\makeatletter
+\renewcommand{\l@section}{\@dottedtocline{1}{1.5em}{2.6em}}
+\renewcommand{\l@subsection}{\@dottedtocline{2}{4.0em}{3.6em}}
+\renewcommand{\l@subsubsection}{\@dottedtocline{3}{7.4em}{4.5em}}
+\makeatother
+
+\begin{document}
+    \begin{titlepage}
+        \centering
+        \center{\scshape Sieciowe Systemy Multimedialne}
+        \vspace{0.05\textheight}
+        \center{\textbf CYFROWE ORGANY}
+        \vspace{0.06\textheight}
+        \center{\LARGE\bfseries Wykorzystanie symulatora wirtualnych organów piszczałkowych w celu poprawy brzmienia istniejącego instrumentu cyfrowego}
+        \center{Using a virtual pipe organ simulator to improve the sound of an existing digital instrument}
+        \vspace{0.5\textheight}
+        \center{Michał Patyk}
+        \vspace{0.03\textheight}
+        \center{Kraków 2021}
+    \end{titlepage}
+
+    \tableofcontents
+
+
+    \chapter{Wstęp}\label{ch:wstęp}
+    Motywacją do wykonania projektu jest chęć poprawy brzmienia oraz zwiększenia możliwości istniejącego instrumentu cyfrowego.
+
+
+    \chapter{Przegląd dziedziny}
+
+
+    \section{Standard MIDI}
+
+
+    \section{Organy cyfrowe}
+
+
+    \section{Wirtualne organy piszczałkowe}
+    Na rynku wirtualnych organów piszczałkowych istnieją dwa duzi gracze: Hauptwerk oraz GrandOrgue.
+
+    Hauptwerk\ldots
+
+    GrandOrgue\ldots
+
+
+    \chapter{Koncepcja}
+
+
+    \section{Stan istniejący}
+    Cyfrowe organy Classic 4500 firmy Viscount.
+
+
+    \section{Cele}
+    Maksymalna poprawa brzmienia organów przy minimalnych nakładach finansowych.
+    Zwiększenie możliwości głosowych.
+
+
+    \chapter{Realizacja}
+
+
+    \section{Przygotowanie komputera}
+    Instalacja systemu operacyjnego Linux.
+
+    \section{Konfiguracja oprogramowania}
+
+
+    \chapter{Ewaluacja}
+
+
+    \chapter{Podsumowanie}
+
+
+    \section{Dalsze kierunki rozwoju}
+    Wyposażenia komputera w dysk SSD i większą ilość pamięci RAM.
+    Budowa organów hybrydowych - fizyczny subbas 16' - w oparciu o urządzenia midi.
+
+    \inputencoding{utf8}
+
+    \newpage
+    \addcontentsline{toc}{chapter}{Bibliografia}
+
+%    TODO remove next line
+    \nocite{*}
+    \printbibliography[title={Bibliografia}]
+
+
+\end{document}
