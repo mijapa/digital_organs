@@ -1,0 +1,3 @@
+dot -Tpng input.gv -o ../fig/organizacja.png
+
+https://ncona.com/2020/06/create-diagrams-with-code-using-graphviz/

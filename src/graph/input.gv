@@ -1,0 +1,16 @@
+digraph workflowGraph {
+    graph [label = "wirtualne organy", labelloc = t, fontsize = 15];
+    rankdir = LR
+
+    a [label = "klawiatura"]
+    b [label = "interfejs midi"]
+    c [label = "komputer"]
+    d [label = "wzmacniacz"]
+    e [label = "głośniki"]
+
+
+    a -> b
+    b -> c
+    c -> d
+    d -> e
+}
