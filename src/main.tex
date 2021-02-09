@@ -56,6 +56,12 @@ singlelinecheck=off
 
 
     \chapter{Wstęp}\label{ch:wstęp}
+    Fascynacja organami i pracą organisty towarzyszyła autorowi od lat dzieciństwa.
+    Niestety elektroniczny instrument znajdujący się w parafialnym kościele wypada dość blado na tle współczesnych rozwiązań.
+    Skromne możliwości finansowe parafii wciąż nie pozwalają na zakup docelowego instrumentu jakim są organy piszczałkowe których budowa to koszt rzędu kilkuset tysięcy złotych.
+
+
+    \section{Motywacja}
     Motywacją do wykonania projektu jest chęć poprawy brzmienia oraz zwiększenia możliwości istniejącego instrumentu cyfrowego.
 
 
@@ -103,7 +109,7 @@ singlelinecheck=off
 
     \section{Wirtualne organy piszczałkowe}\label{sec:wirtualne-organy-piszczałkowe}
 
-    \begin{figure}[!htp]
+    \begin{figure}[!ht]
         \centering
         \includegraphics[width=\linewidth]{fig/organizacja.png}
         \caption{Schemat wykorzystania wirtualnych organów. (źródło:~opracowanie własne)}
@@ -153,15 +159,27 @@ singlelinecheck=off
 
 
     \section{Stan istniejący}\label{sec:stan-istniejący}
-    Cyfrowe organy Classic 4500 firmy Viscount.
+
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=\linewidth]{fig/organyViscount.jpg}
+        \caption{Organy Viscount Classic 4500. (źródło:~opracowanie własne)}
+        \label{fig:organyViscount}
+    \end{figure}
+
+    Cyfrowe organy Classic 4500 firmy Viscount~\ref{fig:organyViscount}.
     Posiadają dwa manuały po 56 klawiszy i 27 klawiszowy pedał.
     Generacja dźwięku przebiega na zasadzie syntezy addytywnej.
     Organy posiadają wyjście i wejście midi w postaci dwóch 5 pinowych złączy DIN.
+    Wyjście dźwiękowe organów jest podłączone do mikser.
+
+    Mikser XRD 680S firmy Peavey z wbudowanymi efektami i wzmacniaczem o mocy 150W na kanał.
+    Posiada frontowy panel z wyjściami i monitorem poziomu, a także kontrole wysokich, średnich i niskich tonów.
 
 
     \section{Cele}\label{sec:cele}
-    Głównym celem projektu jest poprawa brzmienia instrumentu poprzez zastąpienie dźwięku syntezowanego addytywnie
-    w istniejącym instrumencie systemem komputerowym z wirtualnymi organami.
+    Głównym celem projektu jest poprawa brzmienia instrumentu poprzez zastąpienie dźwięku syntezowanego addytywnie,
+    w istniejącym instrumencie, systemem komputerowym z wirtualnymi organami.
     Dodatkowym celem jest poszerzenie gamy dostępnych barw głosowych organów.
 
     Szczególnym ograniczeniem projektu jest minimalizacja kosztów wykonania.
@@ -241,7 +259,7 @@ singlelinecheck=off
     W takim przypadku dane mogą nie zostać dostarczone do bufora dźwięku na czas, co będzie przyczyną głośnych trzasków.
 
     Rysunek~\ref{fig:ustawienia-dzwieku} przedstawia ustawienia dźwięku programu GrandOrgue.
-    \begin{figure}[!htp]
+    \begin{figure}[!ht]
         \centering
         \includegraphics[width=\linewidth]{fig/optionsR.png}
         \caption{Panel ustawień dźwięku programu GrandOrgue. (źródło:~opracowanie własne)}
@@ -262,7 +280,7 @@ singlelinecheck=off
     Ważną grupą ustawień są też parametry samych organów, które można zobaczyć na rysunku~\ref{fig:organy}.
     W panelu tym można dostosować głośność poszczególnych rejestrów, a także zobaczyć jaką ilość pamięci RAM zajmują.
     Możliwa jest też zmiana jakości lub wyłączenie ładowania poszczególnych sampli dla zaoszczędzenia pamięci.
-    \begin{figure}[!htp]
+    \begin{figure}[!ht]
         \centering
         \includegraphics[width=\linewidth]{fig/organR.png}
         \caption{Panel ustawień organów. (źródło:~opracowanie własne)}
@@ -274,7 +292,7 @@ singlelinecheck=off
     należy wskazać programowi GrandOrgue które wiadomości MIDI odpowiadają któremu manuałowi.
     Aby to zrobić wystarczy kliknąć prawym przyciskiem myszy na wybrany manuał w programie.
     W oknie które sie pojawi należy wybrać ``Listen for event'', a następnie nacisnąć klawisz na odpowiednim manuale.
-    \begin{figure}[!htp]
+    \begin{figure}[!ht]
         \centering
         \includegraphics[width=\linewidth]{fig/midiR.png}
         \caption{Panel konfiguracji MIDI dla manuału. (źródło:~opracowanie własne)}
