@@ -235,19 +235,37 @@ singlelinecheck=off
     Wszystkie dźwięki są przygotowane z częstotliwością próbkowania 48 kHz.
 
     \subsection{Podłączenie elementów zestawu}
-    Przygotowany system komputerowy został podłączony do istniejących organów przy pomocy konwertera MIDI-USB pokazanego na rysunku~\ref{fig:midiusb}.
-    Należy zwrócić uwagę na odpowiednią konfigurację - MIDI IN urządzenia łączymy z MIDI OUT wtyczki.
+    Przygotowany system komputerowy został podłączony do istniejących organów przy pomocy konwertera MIDI-USB.
+
+    Ważna jest odpowiednia jakoś urządzenia.
+    Wykorzystany w pierwszej wersji podłączenia prosty konwerter, pokazanego na rysunku~\ref{fig:midiusb}, nie pozwalał na poprawne rozpoznanie kanałów MIDI, a tym samym rozdzielenie dźwięków z manuałów.
+    Nieprawidłowe działanie skutkowało ``zawieszaniem'' się klawiszy na skutek braku informacji o ich puszczeniu.
+
+    Należy zwrócić uwagę na odpowiednią konfigurację - MIDI OUT urządzenia łączymy z MIDI IN wtyczki.
     Konwerter nie wymaga instalacji dodatkowych sterowników.
     Jest rozpoznawany przez system zaraz po podłączeniu.
 
-    \begin{figure}[!htp]
+    \begin{figure}[!ht]
         \centering
         \includegraphics[width=\linewidth]{fig/midi-usb.jpg}
-        \caption{Konwerter MIDI-USB. (źródło:~opracowanie własne)}
+        \caption{Prosty konwerter MIDI-USB. (źródło:~opracowanie własne)}
         \label{fig:midiusb}
     \end{figure}
 
-    Dźwięk generowany przez wirtualne organy jest przesyłany kablem jack - RCA (chinch) do wzmacniacza.
+    Dźwięk generowany przez wirtualne organy jest przesyłany do wzmacniacza.
+    Tutaj kolejny raz konfiguracja ma duże znaczenie.
+    Pierwotnie do podłączenia wykorzystano przewód jack-duży jack podając sygnał na wejście line-in miksera.
+    Zgodnie ze schematem~\ref{fig:mikser-schemat} z instrukcji miksera dostępnej na stronie producenta~\cite{peavey}, takie podłączenie zapewnia tylko dźwięk mono.
+    Właściwe podłączenie to podanie sygnału na wejście tape/aux-in przy pomocy przewodu jack-cinch.
+
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=\linewidth]{fig/peavey.png}
+        \caption{Schemat blokowy miksera XRD-680S firmy Peavey. (źródło:~instrukcja miksera XRD-680S)}
+        \label{fig:mikser-schemat}
+    \end{figure}
+
+
     Wzmacniacz zasila cztery kolumny pasywne rozmieszczone symetrycznie po dwóch stronach kościoła.
 
     \subsection{Konfiguracja oprogramowania}
