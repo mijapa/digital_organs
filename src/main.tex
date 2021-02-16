@@ -58,7 +58,7 @@ singlelinecheck=off
     \chapter{Wstęp}\label{ch:wstęp}
     Fascynacja organami i pracą organisty towarzyszyła autorowi od lat dzieciństwa.
     Niestety elektroniczny instrument znajdujący się w parafialnym kościele wypada dość blado na tle współczesnych rozwiązań.
-    Skromne możliwości finansowe parafii wciąż nie pozwalają na zakup docelowego instrumentu jakim są organy piszczałkowe których budowa to koszt rzędu kilkuset tysięcy złotych.
+    Skromne możliwości finansowe parafii wciąż nie pozwalają na zakup docelowego instrumentu jakim są organy piszczałkowe, których budowa to koszt rzędu kilkuset tysięcy złotych.
 
 
     \section{Motywacja}
@@ -80,10 +80,10 @@ singlelinecheck=off
     Serializowane dane przesyłane są w kablu w jednym kierunku.
     MIDI OUT to wyjście danych do innego urządzenia.
     MIDI IN to wejście danych z innego urządzenia.
-    MIDI THRU przekazuje wszystkie wiadomości które dotrą do urządzenia na port MIDI IN.
+    MIDI THRU przekazuje wszystkie wiadomości, które dotrą do urządzenia na port MIDI IN.
 
     Wiadomości MIDI sa podzielone na dwie kategorie: wiadomości systemowe i wiadomości kanałów.
-    Wiadomości systemowe to te które sa związane z całym systemem MIDI.
+    Wiadomości systemowe to te, które sa związane z całym systemem MIDI.
     W każdej wiadomości kanałowej może być zakodowane do 16 kanałów, co pozwala na przesłanie jednym kablem wykonania składającego się z 16 różnych źródeł dźwięku.
 
 
@@ -103,6 +103,7 @@ singlelinecheck=off
     Zamiast tego przechowywane są listy liczb określające amplitudy każdej harmonicznej,
     które są następnie wykorzystywane do tworzenia dźwięków w czasie rzeczywistym, zgodnie z wymaganiami.
     Kontuar (stół gry) organów cyfrowych zwykle wyglądem bardzo przypomina ten z organów piszczałkowych.
+
     Zgodnie z instrukcją Konferencji Episkopatu Polski organy elektroniczne wolno stosować tylko jako instrument tymczasowy,
     bez dodawania sztucznego prospektu (frontowej elewacji zewnętrznej).
 
@@ -124,20 +125,20 @@ singlelinecheck=off
 
     \subsection{Sampling}
     Sampling to technika nagrywania dźwięków instrumentu muzycznego.
-    Najprostsze rozwiązania to takie w których nagrywa się tylko kilka dźwięków, podczas gdy pozostałe są tworzone przez transponowanie.
+    Najprostsze rozwiązania to takie, w których nagrywa się tylko kilka dźwięków, podczas gdy pozostałe są tworzone przez transponowanie.
     Najlepsze zestawy próbek to te w których każdy dźwięk jest nagrywany osobno.
     Niestety takie rozwiązanie, poza pracochłonnością procesu nagrywania, niesie też ze sobą problemy natury technicznej.
     Dźwięki powinny być przechowywane w najlepszym możliwie formacie, przy jak najwyższej częstotliwości próbkowania oraz wielobitowej kwantyzacji.
     W rezultacie powstaje duża ilość danych (kilka - kilkanaście gigabajtów).
     Dla najlepszej wierności dźwięku stosuje się tak zwane próbkowanie multi-release,
-    w którym dla każdej piszczałki nagrywa się próbki rozpoczęcia, podtrzymania oraz wiele próbek zanikanie dźwięku.
+    w którym dla każdej piszczałki nagrywa się próbki rozpoczęcia, podtrzymania oraz wiele próbek zanikania dźwięku.
     Taki zabieg wynika z faktu, że dźwięk zanikania ma inny charakter w zależności od długości nuty.
     Związane jest to z akustyką kościołów i hal koncertowych.
     Poza dźwiękami piszczałek, dla dodania realizmu, dołącza się też dźwięki mechanizmów, a nawet dmuchaw.
 
     \subsection{Oprogramowanie}
 
-    Na rynku wirtualnych organów piszczałkowych istnieją dwaj duzi gracze: Hauptwerk oraz GrandOrgue.
+    Na rynku wirtualnych organów piszczałkowych liczą się tylko dwa programy: Hauptwerk oraz GrandOrgue.
 
     \paragraph{Hauptwerk}
     Hauptwerk to komercyjny program komputerowy stworzony w 2002 roku przez Martina Dyde'a~\cite{13115512220180101}, wydawany przez Milan Digital Audio.
@@ -167,14 +168,16 @@ singlelinecheck=off
         \label{fig:organyViscount}
     \end{figure}
 
-    Cyfrowe organy Classic 4500 firmy Viscount~\ref{fig:organyViscount}.
+    Cyfrowe organy Classic 4500 firmy Viscount (rys.~\ref{fig:organyViscount}).
+    Wyprodukowane na początku lat 90 ubiegłego stulecia.
     Posiadają dwa manuały po 56 klawiszy i 27 klawiszowy pedał.
     Generacja dźwięku przebiega na zasadzie syntezy addytywnej.
     Organy posiadają wyjście i wejście midi w postaci dwóch 5 pinowych złączy DIN.
-    Wyjście dźwiękowe organów jest podłączone do mikser.
+    Wyjście dźwiękowe organów jest podłączone do miksera.
 
     Mikser XRD 680S firmy Peavey z wbudowanymi efektami i wzmacniaczem o mocy 150W na kanał.
-    Posiada frontowy panel z wyjściami i monitorem poziomu, a także kontrole wysokich, średnich i niskich tonów.
+    Posiada frontowy panel z wejściami i monitorem poziomu sygnału,
+    a także kontrole wysokich, średnich i niskich tonów.
 
 
     \section{Cele}\label{sec:cele}
@@ -187,28 +190,30 @@ singlelinecheck=off
 
 
     \chapter{Realizacja}
+    W tym rozdziale opisany został wybór sprzętu i oprogramowania~\ref{sec:wybór-sprzętu-i-oprogramowania}
+    oraz proces przygotowywania wirtualnych organów~\ref{sec:przygotowanie-wirtualnych-organów}.
 
 
-    \section{Wybór sprzętu i oprogramowania}
+    \section{Wybór sprzętu i oprogramowania}\label{sec:wybór-sprzętu-i-oprogramowania}
     W celu minimalizacji kosztów zdecydowano się wykorzystać dostępny komputer.
     Przy wyborze oprogramowania ponownie kierowano się kosztem - wybór padł na darmowe oprogramowanie GrandOrgue.
 
 
-    \section{Przygotowanie wirtualnych organów}
+    \section{Przygotowanie wirtualnych organów}\label{sec:przygotowanie-wirtualnych-organów}
 
     \subsection{Instalacja systemu operacyjnego Linux}
     Jako system operacyjny wykorzystano darmowy Linux Mint~\cite{mint}.
     Proces instalacji jest łatwy i przyjazny dla użytkownika.
 
     \subsection{Instalacja oprogramowania GrandOrgue}
-    Aby zainstalować GrandOrgue na systemie operacyjnym Linux Mint należy dodać repozytorium ze strony~\cite{grandorgueRepo},
+    Aby zainstalować GrandOrgue, w systemie operacyjnym Linux Mint, należy dodać repozytorium ze strony~\cite{grandorgueRepo},
     a następnie użyć poleceń systemowych do instalacji.
     \begin{verbatim}
         sudo apt update
         sudo apt install grandorgue
     \end{verbatim}
 
-    \subsection{Wybór i pobranie próbek}
+    \subsection{Wybór i pobranie próbek dźwięków}
     Oprogramowanie GrandOrgue jest domyślnie wyposażone w podstawowy zestaw dźwięków.
     Zdecydowano się na zmianę próbek na takie o wyższej jakości.
     Należy je dołączyć do systemu ręcznie.
@@ -245,6 +250,13 @@ singlelinecheck=off
     Konwerter nie wymaga instalacji dodatkowych sterowników.
     Jest rozpoznawany przez system zaraz po podłączeniu.
 
+    Niestety, wykorzystany w drugiej wersji konwerter MIDI-USB również nie zapewnił w pełni poprawnego rozpoznawania wszystkich manuałów instrumentu.
+    W efekcie, bez zakłóceń, można korzystać tylko z jednego z nich.
+    Proponowanym rozwiązaniem jest zakup znacznie droższego konwertera firmy Roland,
+    który powinien poradzić sobie z komunikację ze starszymi urządzeniami takimi jak posiadane organy Viscount.
+    Innym możliwym rozwiązaniem jest też wykorzystanie zewnętrznej karty dźwiękowej z wejściem MIDI.
+    Ze względu na ograniczenia finansowe rozwiązania te nie zostały uwzględnione w obecnym projekcie.
+
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=\linewidth]{fig/midi-usb.jpg}
@@ -255,7 +267,7 @@ singlelinecheck=off
     Dźwięk generowany przez wirtualne organy jest przesyłany do wzmacniacza.
     Tutaj kolejny raz konfiguracja ma duże znaczenie.
     Pierwotnie do podłączenia wykorzystano przewód jack-duży jack podając sygnał na wejście line-in miksera.
-    Zgodnie ze schematem~\ref{fig:mikser-schemat} z instrukcji miksera dostępnej na stronie producenta~\cite{peavey}, takie podłączenie zapewnia tylko dźwięk mono.
+    Zgodnie ze schematem~\ref{fig:mikser-schemat} z instrukcji miksera, dostępnej na stronie producenta~\cite{peavey}, takie podłączenie zapewnia tylko dźwięk mono.
     Właściwe podłączenie to podanie sygnału na wejście tape/aux-in przy pomocy przewodu jack-cinch.
 
     \begin{figure}[!ht]
@@ -273,7 +285,7 @@ singlelinecheck=off
     \paragraph{Dźwięk}
     Błędna konfiguracja programu GrandOrgue może prowadzić do silnych zniekształceń generowanego dźwięku, a w konsekwencji nawet do uszkodzenia głośników i wzmacniacza.
     Z jednej strony przyczyną zniekształceń jest wybranie zbyt niskiej jakości.
-    Z drugiej strony wybranie zbyt wysokiej jakości dźwięku może spowodować niezmieszczenie się próbek w pamięci RAM.
+    Z drugiej strony wybranie zbyt wysokiej jakości dźwięku może spowodować niemieszczenie się próbek w pamięci RAM.
     W takim przypadku dane mogą nie zostać dostarczone do bufora dźwięku na czas, co będzie przyczyną głośnych trzasków.
 
     Rysunek~\ref{fig:ustawienia-dzwieku} przedstawia ustawienia dźwięku programu GrandOrgue.
@@ -284,7 +296,7 @@ singlelinecheck=off
         \label{fig:ustawienia-dzwieku}
     \end{figure}
 
-    Należy upewnić się, że rozdzielczość bitowa jest ustawiona zgodnie z załadowanym zestawem.
+    Należy upewnić się, że rozdzielczość bitowa jest ustawiona zgodnie z rozdzielczością załadowanego zestawu.
     Ustawienie innej wartości może powodować resampling w warstwach stosu audio, na czym ucierpi jakość.
     Mniejsza wartość jest dopuszczalna ale znacząco wpłynie na jakość dźwięku który stanie się wyraźnie ``płaski''.
 
@@ -295,13 +307,13 @@ singlelinecheck=off
 
     Należ też zwrócić uwagę na poziom głośności w programie, tak aby uniknąć przycinania.
 
-    Ważną grupą ustawień są też parametry samych organów, które można zobaczyć na rysunku~\ref{fig:organy}.
-    W panelu tym można dostosować głośność poszczególnych rejestrów, a także zobaczyć jaką ilość pamięci RAM zajmują.
-    Możliwa jest też zmiana jakości lub wyłączenie ładowania poszczególnych sampli dla zaoszczędzenia pamięci.
+    Ważną grupą ustawień są parametry samych organów, które można zobaczyć na rysunku~\ref{fig:organy}.
+    W panelu tym można dostosować głośność poszczególnych rejestrów, a także zobaczyć jaką ilość pamięci RAM te rejestry zajmują.
+    Możliwa jest też zmiana jakości lub wyłączenie ładowania poszczególnych sampli dla zaoszczędzenia pamięci operacyjnej.
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=\linewidth]{fig/organR.png}
-        \caption{Panel ustawień organów. (źródło:~opracowanie własne)}
+        \caption{Panel ustawień organów programu GrandOrgue. (źródło:~opracowanie własne)}
         \label{fig:organy}
     \end{figure}
 
@@ -313,7 +325,7 @@ singlelinecheck=off
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=\linewidth]{fig/midiR.png}
-        \caption{Panel konfiguracji MIDI dla manuału. (źródło:~opracowanie własne)}
+        \caption{Panel konfiguracji MIDI dla manuału w programie GrandOrgue. (źródło:~opracowanie własne)}
         \label{fig:midi}
     \end{figure}
 
@@ -336,9 +348,10 @@ singlelinecheck=off
     Niestety 8GB pamięci RAM to ilość zbyt mała do korzystania z dużych zestawów próbek z pełną jakością.
     Na razie podstawowym zestawem głosów pozostanie mniejszy - Azzio zawierający 11 rejestrów.
 
-    Zgodnie z założeniami udało się wykorzystać istniejące organy.
-    Naciśnięcia klawiszy są poprawnie przekazywane do programu GrandOrgue.
     Generacji dźwięku nie towarzyszą żadne zniekształcenia ani trzaski.
+
+    Zgodnie z założeniami udało się zagospodarować istniejące organy cyfrowe,
+    jednak ograniczenia finansowe nie pozwoliły na ich pełne wykorzystanie.
 
 
     \chapter{Podsumowanie}
@@ -346,25 +359,33 @@ singlelinecheck=off
 
 
     \section{Realizacja celów}\label{sec:realizacja-celów}
-    Postawione w projekcie zadania udało się w pełni zrealizować przy uwzględnieniu zadanych ograniczeń.
-    Zarówno cel główny, którym była poprawa brzmienia instrumentu, jak i cel dodatkowy - poszerzenie gamy dostępnych barw głosowych organów - zostały osiągnięte.
+    Postawione w projekcie zadania, przy uwzględnieniu zadanych ograniczeń, udało się tylko częściowo zrealizować.
+    Cel główny, którym była poprawa brzmienia instrumentu, został zrealizowany.
+    Niestety ograniczenia finansowe nie pozwoliły na poprawne podłączenie wszystkich manuałów,
+    a co za tym idzie na właściwe wykorzystanie możliwości wirtualnych organów.
+    Cel dodatkowy - poszerzenie gamy dostępnych barw głosowych organów - nie mógł być zrealizowany ze względu na ograniczenia finansowe.
 
 
     \section{Dalsze kierunki rozwoju}\label{sec:dalsze-kierunki-rozwoju}
     Proponowane dalsze kierunki rozwoju systemu to:
     \begin{enumerate}
         \item Wykorzystanie zewnętrznej karty dźwiękowej.
-        Zewnętrzne karty dźwiękowe mają zwykle lepsze przetworniki cyfrowo analogowe i zapewniają lepsze brzmienie.
-        \item Użycie systemu operacyjnego skierowanego na multimedia - Ubuntu Studio - wraz z platformą dźwiękową o niskim opóźnieniu - Jack.
-        SSystem operacyjny nakierowany na multimedia może zapewnić redukcję opóźnienia w trze dźwiękowym.
+
+        Zewnętrzne karty dźwiękowe mają zwykle dokładniejsze przetworniki cyfrowo analogowe i zapewniają lepsze brzmienie niż karty zintegrowane.
+        \item Użycie systemu operacyjnego skierowanego na multimedia - \textbf{Ubuntu Studio} - wraz z platformą dźwiękową o niskim opóźnieniu - Jack.
+
+        System operacyjny nakierowany na multimedia może zapewnić redukcję opóźnienia w torze dźwiękowym.
         \item Wyposażenia komputera w dysk SSD i większą ilość pamięci RAM.
+
         Większa ilość pamięci RAM pozwoli na korzystanie z większych zestawów próbek przy pełnej jakości.
         Dysk SSD pozwoli na zmniejszenie czasu oczekiwania na załadowanie próbek do pamięci RAM przy uruchamianiu systemu.
         \item Dodanie do organów przycisków odpowiedzialnych za preselekcję rejestrów.
+
         Takie przyciski pozwalają na szybką zmianę rejestrów (barw głosów) podczas wykonywania utworu, a co za tym idzie bogatsze wykorzystywanie głosów instrumentu.
-        \item Budowa organów hybrydowych - fizyczny subbas 16' - w oparciu o urządzenia MIDI.
+        \item Budowa organów hybrydowych - fizyczny głos subbas 16' - w oparciu o urządzenia MIDI.
+
         Systemom nagłośnienia bardzo trudno jest oddać właściwy charakter najniższych dźwięków w organach.
-        Aby rozwiązać ten problem buduje się organy hybrydowe w której większość głosów jest generowana cyfrowo, a najniższe są prawdziwymi piszczałkami.
+        Aby rozwiązać ten problem buduje się organy hybrydowe w których większość głosów jest generowana cyfrowo, a głosy najniższe są w realizowane w postaci prawdziwych piszczałek.
     \end{enumerate}
 
     \inputencoding{utf8}
